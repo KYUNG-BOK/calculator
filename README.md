@@ -1,7 +1,7 @@
 # 💻 계산기 프로젝트 - Vanilla JS Calculator
 
 > 키보드 입력까지 구현한 첫 번째 프로젝트 - 웹계산기 입니다.  
-> 🧪 [👉 바로가기 (한번 보러가시죠!)](https://kyung-bok.github.io/team_project/%EC%9C%A4%EA%B2%BD%EB%B3%B5_4%EB%8B%A8%EA%B3%84/calculator.html)
+> 🧪 [👉 (한번 보러가시죠!)](https://kyung-bok.github.io/team_project/%EC%9C%A4%EA%B2%BD%EB%B3%B5_4%EB%8B%A8%EA%B3%84/calculator.html)
 
 ---
 
