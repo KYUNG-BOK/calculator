@@ -1,0 +1,115 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 가운데로 정렬 */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 계산기본체 */
+div.calculator{
+    background-color: #3c3b3b;
+    border-radius: 20px;
+    padding: 18px;
+    width: 360px;
+}
+
+/* 계산 결과값 출력되는 부분 */
+.display {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;        /* 루트요소 기준 */
+    text-align: right;      /* 텍스트 오른쪽으로 정렬 */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;          /* 안쪽여백 설정, 텍스트가 너무 붙지 않도록 */
+    background: #6d6c6c;
+    color: #ffffff;
+}
+
+/* 버튼들이 추가될 부분 */
+div.buttons {
+    height: 400px;
+    display: grid;                              /* grid로 행열 제어*/
+    grid-template-columns: repeat(4, 1fr);      /*4개의 열을 생성, 각 열의 너비는 똑같이 나눔*/
+    gap: 10px;                                 /*각 사이의 갭을 설정, 저한텐 이게 딱 맞아유*/
+}
+
+button {
+    height: 70px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 15px;
+    background: #505050;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #b3b0b0;
+    color: black;
+}
+
+/* 마우스 클릭했을때 */
+button:active{
+    transform: scale(0.96);
+    background-color: #787878;
+}
+
+button.orange {
+    background-color: rgb(233, 109, 7);
+}
+
+button.gray{
+    background-color: gray;
+}
+
+/* '0' 버튼은 수평으로 2칸 차지할 수 있게 **/
+button.zero {
+    grid-column: span 2;  
+}
+
+/* 도전과제, 상단바 */
+.title_bar {
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;        /* 왼쪽에서 정렬시작 */
+    gap: 8px;                           /* 버튼 간격 */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* 도전과제, 신호등만들기 */
+.btn_red, .btn_yellow, .btn_green {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;          /* 옆으로 나란히 정렬 */
+}
+.btn_red {
+    background-color: red;
+    border: red;
+}
+.btn_yellow {
+    background-color: #ffbd2e;
+    border: #ffbd2e;
+}
+
+.btn_green {
+    background-color: rgb(74, 207, 74);
+    border:  rgb(74, 207, 74);
+}
+
+button.active {
+    background-color: #d0e6ff !important;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: scale(0.97);
+}
